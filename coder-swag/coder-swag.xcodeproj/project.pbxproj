@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82D504F1F80C60D00A5C0F1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D504E1F80C60D00A5C0F1 /* Category.swift */; };
+		C82D50521F80C78800A5C0F1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D50511F80C78800A5C0F1 /* DataService.swift */; };
 		C8875B361F80B74C008E0303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8875B351F80B74C008E0303 /* AppDelegate.swift */; };
 		C8875B381F80B74C008E0303 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8875B371F80B74C008E0303 /* CategoriesVC.swift */; };
 		C8875B3B1F80B74C008E0303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8875B391F80B74C008E0303 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C82D504E1F80C60D00A5C0F1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C82D50511F80C78800A5C0F1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C8875B321F80B74C008E0303 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8875B351F80B74C008E0303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8875B371F80B74C008E0303 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C82D50501F80C77700A5C0F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C82D50511F80C78800A5C0F1 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C8875B291F80B74C008E0303 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 		C8875B341F80B74C008E0303 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				C82D50501F80C77700A5C0F1 /* Services */,
 				C8875B571F80BB13008E0303 /* model */,
 				C8875B551F80BB05008E0303 /* view */,
 				C8875B561F80BB0A008E0303 /* controller */,
@@ -119,6 +132,7 @@
 		C8875B571F80BB13008E0303 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C82D504E1F80C60D00A5C0F1 /* Category.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -229,6 +243,8 @@
 				C8875B381F80B74C008E0303 /* CategoriesVC.swift in Sources */,
 				C8875B361F80B74C008E0303 /* AppDelegate.swift in Sources */,
 				C8875B591F80BB76008E0303 /* CategoryCell.swift in Sources */,
+				C82D504F1F80C60D00A5C0F1 /* Category.swift in Sources */,
+				C82D50521F80C78800A5C0F1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
