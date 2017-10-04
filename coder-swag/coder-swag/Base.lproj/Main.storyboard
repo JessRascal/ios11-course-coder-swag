@@ -92,17 +92,17 @@
                     <navigationItem key="navigationItem" title="CODERSWAG" id="L9J-7o-naK"/>
                     <connections>
                         <outlet property="categoryTable" destination="Kk2-bE-whT" id="ShQ-HE-hgr"/>
-                        <segue destination="BYE-PT-VwY" kind="show" id="oB7-i9-gaU"/>
+                        <segue destination="BYE-PT-VwY" kind="show" identifier="ProductsVC" id="oB7-i9-gaU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="rx4-01-IDc">
             <objects>
-                <viewController id="BYE-PT-VwY" sceneMemberID="viewController">
+                <viewController id="BYE-PT-VwY" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bde-pf-6o4"/>
                         <viewControllerLayoutGuide type="bottom" id="akn-fT-bob"/>
@@ -127,7 +127,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9DW-Hh-EZd" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="9DW-Hh-EZd" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="176" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -140,17 +140,17 @@
                                                         <constraint firstAttribute="height" constant="178" id="OLQ-L0-eDh"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-1g-3qn">
-                                                    <rect key="frame" x="8" y="186" width="160" height="40"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-1g-3qn">
+                                                    <rect key="frame" x="0.0" y="186" width="176" height="38.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="iZ4-dd-kE3"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="iZ4-dd-kE3"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" white="0.25211588538333335" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgq-iR-dhd">
-                                                    <rect key="frame" x="8" y="229.5" width="160" height="15.5"/>
+                                                    <rect key="frame" x="0.0" y="227.5" width="176" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                                     <color key="textColor" white="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -159,16 +159,16 @@
                                         </view>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="wgq-iR-dhd" firstAttribute="leading" secondItem="9DW-Hh-EZd" secondAttribute="leading" id="0yW-md-gSF"/>
+                                            <constraint firstAttribute="trailing" secondItem="wgq-iR-dhd" secondAttribute="trailing" id="6bl-MK-NjV"/>
                                             <constraint firstAttribute="trailing" secondItem="uFV-Hh-jOi" secondAttribute="trailing" id="8yx-Vv-Lsg"/>
+                                            <constraint firstItem="IVz-1g-3qn" firstAttribute="leading" secondItem="9DW-Hh-EZd" secondAttribute="leading" id="II4-5r-TMQ"/>
                                             <constraint firstItem="uFV-Hh-jOi" firstAttribute="top" secondItem="9DW-Hh-EZd" secondAttribute="top" id="Nd3-Sb-sGo"/>
+                                            <constraint firstAttribute="trailing" secondItem="IVz-1g-3qn" secondAttribute="trailing" id="OA7-2J-TZb"/>
                                             <constraint firstItem="IVz-1g-3qn" firstAttribute="top" secondItem="uFV-Hh-jOi" secondAttribute="bottom" constant="8" id="S6f-MI-B9O"/>
-                                            <constraint firstItem="IVz-1g-3qn" firstAttribute="leading" secondItem="9DW-Hh-EZd" secondAttribute="leadingMargin" constant="8" id="YZR-5G-UUB"/>
                                             <constraint firstItem="uFV-Hh-jOi" firstAttribute="leading" secondItem="9DW-Hh-EZd" secondAttribute="leading" id="d2o-P7-m6w"/>
                                             <constraint firstAttribute="bottom" secondItem="wgq-iR-dhd" secondAttribute="bottom" constant="8" id="eKj-NM-Wu0"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="IVz-1g-3qn" secondAttribute="trailing" constant="8" id="gZu-Lp-BlB"/>
-                                            <constraint firstAttribute="trailing" secondItem="wgq-iR-dhd" secondAttribute="trailing" constant="8" id="rAO-Iz-sR0"/>
                                             <constraint firstItem="wgq-iR-dhd" firstAttribute="top" secondItem="IVz-1g-3qn" secondAttribute="bottom" constant="3" id="t91-Vx-EHr"/>
-                                            <constraint firstItem="wgq-iR-dhd" firstAttribute="leading" secondItem="9DW-Hh-EZd" secondAttribute="leading" constant="8" id="vdz-xT-LU0"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="productImage" destination="uFV-Hh-jOi" id="ZQH-sP-5WS"/>
@@ -190,6 +190,9 @@
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="YvE-yM-eGX" secondAttribute="trailing" id="yir-nI-wqd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="kAA-7n-ZNn" id="cLg-nF-KpU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egZ-Uc-yUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
