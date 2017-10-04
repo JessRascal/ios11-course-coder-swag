@@ -10,6 +10,7 @@
 		C82D504F1F80C60D00A5C0F1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D504E1F80C60D00A5C0F1 /* Category.swift */; };
 		C82D50521F80C78800A5C0F1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D50511F80C78800A5C0F1 /* DataService.swift */; };
 		C82D50541F856DCF00A5C0F1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D50531F856DCF00A5C0F1 /* ProductCell.swift */; };
+		C82D50561F856ED200A5C0F1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D50551F856ED200A5C0F1 /* Product.swift */; };
 		C8875B361F80B74C008E0303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8875B351F80B74C008E0303 /* AppDelegate.swift */; };
 		C8875B381F80B74C008E0303 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8875B371F80B74C008E0303 /* CategoriesVC.swift */; };
 		C8875B3B1F80B74C008E0303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8875B391F80B74C008E0303 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		C82D504E1F80C60D00A5C0F1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C82D50511F80C78800A5C0F1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C82D50531F856DCF00A5C0F1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C82D50551F856ED200A5C0F1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C8875B321F80B74C008E0303 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8875B351F80B74C008E0303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8875B371F80B74C008E0303 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				C82D504E1F80C60D00A5C0F1 /* Category.swift */,
+				C82D50551F856ED200A5C0F1 /* Product.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				C82D50541F856DCF00A5C0F1 /* ProductCell.swift in Sources */,
 				C82D504F1F80C60D00A5C0F1 /* Category.swift in Sources */,
 				C82D50521F80C78800A5C0F1 /* DataService.swift in Sources */,
+				C82D50561F856ED200A5C0F1 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
